@@ -43,6 +43,8 @@ import {Tasks} from '../api/tasks';
 }
 export default createContainer(() => {
     var at=Tasks.find({}).fetch();
+
+
     return {
         tasks: at,
     };
